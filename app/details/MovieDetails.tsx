@@ -6,7 +6,7 @@ const MOVIE_DETAILS = {
   title: 'Ne Zha 2',
   image: 'https://upload.wikimedia.org/wikipedia/id/thumb/b/b6/Ne_Zha_2_poster.jpg/250px-Ne_Zha_2_poster.jpg',
   description: 'Ne Zha 2 is a Chinese animated fantasy film, a sequel to the popular Ne Zha (2019). It follows the legendary figure Ne Zha as he embarks on new adventures.',
-  releaseDate: '2025',
+  releaseDate: 'March 21, 2025',
   genre: 'Animation, Fantasy, Action',
   rating: '8.5/10',
 };
