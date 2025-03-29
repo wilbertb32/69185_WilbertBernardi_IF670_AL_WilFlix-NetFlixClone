@@ -17,10 +17,7 @@ export default function ManageSubscription() {
 
       {/* Action Buttons */}
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Upgrade Plan</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Downgrade Plan</Text>
+        <Text style={styles.buttonText}>Change Plan</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.cancelButton}>
         <Text style={styles.cancelButtonText}>Cancel Subscription</Text>
