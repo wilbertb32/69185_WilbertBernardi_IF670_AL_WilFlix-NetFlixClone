@@ -1,7 +1,6 @@
 import React from 'react';
 import { createStackNavigator, StackScreenProps } from '@react-navigation/stack';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import UpdateProfile from './UpdateProfile';
 import ChangePassword from './ChangePassword';
 import ManageSubscription from './ManageSubscription';
 
@@ -17,10 +16,6 @@ type AccountSettingsProps = StackScreenProps<RootStackParamList, 'AccountSetting
 const Stack = createStackNavigator<RootStackParamList>();
 
 function AccountSettings({ navigation }: AccountSettingsProps) {
-  const handleUpdateProfile = () => {
-    navigation.navigate('UpdateProfile');
-  };
-
   const handleChangePassword = () => {
     navigation.navigate('ChangePassword');
   };
@@ -32,9 +27,6 @@ function AccountSettings({ navigation }: AccountSettingsProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Account Settings</Text>
-      <TouchableOpacity style={styles.button} onPress={handleUpdateProfile}>
-        <Text style={styles.buttonText}>Update Profile</Text>
-      </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={handleChangePassword}>
         <Text style={styles.buttonText}>Change Password</Text>
       </TouchableOpacity>
@@ -49,7 +41,6 @@ export default function AccountSettingsNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="AccountSettings" component={AccountSettings} />
-      <Stack.Screen name="UpdateProfile" component={UpdateProfile} />
       <Stack.Screen name="ChangePassword" component={ChangePassword} />
       <Stack.Screen name="ManageSubscription" component={ManageSubscription} />
     </Stack.Navigator>
